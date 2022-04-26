@@ -1,0 +1,117 @@
+:root {
+    --green: rgb(0, 170, 126);
+    --grey: #f6f6f6;
+    --white: #fff;
+    --black: #000;
+}
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    background-color: var(--grey);
+}
+p {
+    margin: 0;
+}
+h2 {
+    font-size: 36px;
+    font-weight: 800;
+}
+.container {
+    width: 1170px;
+    padding: 0;
+}
+.nav-a {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--black);
+    text-decoration: none;
+}
+.nav-a:hover {
+    color: var(--black);
+    font-size: px;
+}
+.element {
+    display: grid;
+    grid-template-columns: repeat(4, 275px);
+    gap: 25px;
+}
+.content {
+    /* width: 550px; */
+    grid-column: span 2;
+}
+.img-50 {
+    width: 275px;
+}
+.button {
+    width: 180px;
+    height: 60px;
+    color: var(--black);
+    background-color: var(--white);
+    font-size: 16px;
+    font-weight: 800;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#header-block {
+    height: 30px;
+    background-color: var(--black);
+}
+#header-nav {
+    height: 85px;
+    background-color: var(--white);
+    border-bottom: 2px solid #f0f0f0;
+}
+nav {
+    width: 50%;
+}
+#header-logo {
+    height: 75px;
+}
+#header-banner {
+    height: 665px;
+    background-image: url("../img/baner-główny.jpg");
+    margin-bottom: 80px;
+}
+h1 {
+    width: 60%;
+    margin-left: 60px;
+    color: var(--white);
+    font-size: 40px;
+    font-weight: 600;
+}
+strong {
+    font-weight: 800;
+}
+#h1-border {
+    border: solid 8px var(--green);
+    padding: 16px 24px 16px 24px;
+    display: inline-block;
+}
+#gradient1 {
+    background-image: url("../img/gradient1.png");
+    background-size: contain;
+    color: var(--white);
+    text-align: center;
+}
+#big-number {
+    font-size: 72px;
+    font-weight: 800;
+}
+#break1 {
+    margin: 110px 0 0 0;
+    height: 225px;
+    background-color: var(--green);
+    color: var(--white);
+}
+h4 {
+    text-align: center;
+    width: 55%;
+    font-size: 24px;
+    font-weight: 800;
+}
+.em-black {
+    color: var(--black);
+    font-style: normal;
+}
