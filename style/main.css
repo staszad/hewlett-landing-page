@@ -15,6 +15,30 @@ p {
 h2 {
     font-size: 36px;
     font-weight: 800;
+    text-align: center;
+}
+h3 {
+    height: 65px;
+    padding-left: 10px;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    grid-column: span 2;
+    color: var(--white);
+    background-color: var(--green);
+    font-size: 24px;
+    font-weight: 800;
+}
+h4 {
+    text-align: center;
+    width: 55%;
+    font-size: 24px;
+    font-weight: 800;
+}
+h5 {
+    margin-bottom: 35px;
+    font-size: 16px;
+    font-weight: 700;
 }
 .container {
     width: 1170px;
@@ -33,6 +57,7 @@ h2 {
 .element {
     display: grid;
     grid-template-columns: repeat(4, 275px);
+    grid-auto-rows: 275px;
     gap: 25px;
 }
 .content {
@@ -53,6 +78,29 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.button:hover {
+    color: var(--green);
+}
+.h5-long {
+    margin-bottom: 65px;
+}
+.color-white {
+    color: var(--white);
+}
+.h3-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 275px);
+    gap: 25px;
+}
+.download-break {
+    height: 140px;
+    align-items: center;
+}
+.button-border {
+    height: 62px;
+    width: 188px;
+    border: solid 6px var(--green);
 }
 #header-block {
     height: 30px;
@@ -100,18 +148,138 @@ strong {
     font-weight: 800;
 }
 #break1 {
-    margin: 110px 0 0 0;
+    margin-top: 110px;
+}
+.break {
+    margin-top: 40px;
     height: 225px;
     background-color: var(--green);
     color: var(--white);
 }
-h4 {
-    text-align: center;
-    width: 55%;
-    font-size: 24px;
-    font-weight: 800;
-}
 .em-black {
     color: var(--black);
     font-style: normal;
+}
+#advantages {
+    height: 750px;
+    background-image: url("../img/tło-korzyści.jpg");
+}
+#advantages-h2 {
+    margin-top: 55px;
+}
+.adv-square {
+    border: solid 5px var(--white);
+    color: var(--white);
+    font-size: 24px;
+    font-weight: 800;
+    text-align: center;
+}
+.advantage-p {
+    display: inline-block;
+    width: 80%;
+}
+.img-span-2 {
+    grid-column: span 2;
+}
+#gradient2 {
+    color: var(--white);
+    text-align: center;
+    background-image: url("../img/gradient2.png");
+    background-size: cover;
+}
+#advantage-content {
+    height: 205px;
+    padding: 40px 30px 0 30px;
+    background-color: var(--white);
+}
+#solutions {
+    padding-top: 95px;
+    padding-bottom: 40px;
+    background-color: var(--white);
+}
+#solutions-h2 {
+    margin-bottom: 70px;
+    border: solid 8px var(--green);
+    padding: 30px;
+}
+#break2 {
+    height: 225px;
+    margin-bottom: 100px;
+    color: var(--white);
+    background-image: url("../img/tlo-cta-edit.png");
+    background-repeat: round;
+}
+#break2-h4 {
+    width: 40%;
+}
+#solutions-grey {
+    padding-top: 100px;
+}
+#casestudy {
+    padding: 55px 0 100px 0;
+}
+#casestudy-grid {
+    height: 555px;
+    margin: 120px 0 100px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 575px);
+    gap: 25px;
+}
+.green-p {
+    color: var(--green);
+    font-size: 24px;
+    font-weight: 700;
+}
+.casestudy-h5 {
+    margin: 32px 0 16px 0;
+}
+ul {
+    list-style: none;
+}
+ul li::before {
+    content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: var(--green); /* Change the color */
+    font-weight: 800; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    margin-left: -11px; /* Also needed for space (tweak if needed) */
+}
+#download {
+    height: 880px;
+    background-image: url("../img/tłotło-formularz.jpg");
+}
+#download-grid {
+    height: 555px;
+    display: grid;
+    grid-template-columns: repeat(2, 575px);
+    gap: 25px;
+}
+#download-h2 {
+    margin: 85px 0 100px 0;
+    color: var(--white);
+}
+#download-p {
+    color: var(--white);
+    font-size: 24px;
+}
+.input-text {
+    height: 64px;
+    width: 100%;
+    border: none;
+    margin-bottom: 16px;
+    padding-left: 20px;
+}
+.checkbox-wrapper {
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 1em auto;
+    gap: 0.5em;
+}
+label {
+    color: var(--white);
+    font-size: 14px;
+}
+.form-check-input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    border-radius: 0%;
 }
