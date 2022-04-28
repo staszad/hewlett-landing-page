@@ -8,7 +8,11 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
             rel="stylesheet"
         />
         <link
@@ -19,6 +23,7 @@
         />
         <link rel="stylesheet" href="./style/reset.css" />
         <link rel="stylesheet" href="./style/main.css" />
+        <link rel="stylesheet" href="./style/rwd.css" />
     </head>
     <body>
         <header>
@@ -41,7 +46,7 @@
                     <strong
                         >ROZWIĄZANIA W ZAKRESIE
                         <p id="h1-border">OPIEKI ZDROWOTNEJ</p> </strong
-                    ><br />
+                    ><br class="d-none d-lg-block" />
                     dla małych i średnich przedsiębiorstw
                 </h1>
             </div>
@@ -88,26 +93,26 @@
                 <h2 class="color-white container" id="advantages-h2">
                     KORZYŚCI Z PODEJŚCIA HYBRYDOWEGO
                 </h2>
-                <div class="container element">
+                <div class="container" id="advantages-grid">
                     <div
-                        class="img-50 d-flex justify-content-center align-items-center adv-square"
+                        class="d-flex justify-content-center align-items-center adv-square"
                     >
                         <p class="advantage-p">Niższe<br />koszty IT</p>
                     </div>
                     <div
-                        class="img-50 d-flex justify-content-center align-items-center adv-square"
+                        class="d-flex justify-content-center align-items-center adv-square"
                     >
                         <p class="advantage-p">Mniejsza złożoność</p>
                     </div>
                     <div
-                        class="img-50 d-flex justify-content-center align-items-center adv-square"
+                        class="d-flex justify-content-center align-items-center adv-square"
                     >
                         <p class="advantage-p">
                             Większe zadowolenie klientów i użytkowników
                         </p>
                     </div>
                     <div
-                        class="img-50 d-flex justify-content-center align-items-center"
+                        class="d-flex justify-content-center align-items-center"
                         id="gradient2"
                     >
                         <p class="advantage-p">
@@ -170,12 +175,12 @@
                     </div>
                     <img src="./img/zwinne-1.jpg" class="img-span-2" />
                 </div>
-                <div
-                    class="container download-break d-flex justify-content-end"
-                >
-                    <a href="#download" class="button button-border"
-                        >POBIERZ PDF</a
-                    >
+                <div class="container download-break">
+                    <div class="button-right">
+                        <a href="#download" class="button button-border"
+                            >POBIERZ PDF</a
+                        >
+                    </div>
                 </div>
                 <div class="container element">
                     <img src="./img/zwinne-2.jpg" />
@@ -202,7 +207,7 @@
                         >POBIERZ PDF</a
                     >
                 </div>
-                <div class="container element">
+                <div class="container element element-right">
                     <div class="content">
                         <h5>Gotowe do pracy w chmurze hybrydowej</h5>
                         <p>
@@ -222,12 +227,12 @@
                     <img src="./img/zwinne-4.jpg" />
                     <img src="./img/zwinne-5.jpg" />
                 </div>
-                <div
-                    class="container download-break d-flex justify-content-end"
-                >
-                    <a href="#download" class="button button-border"
-                        >POBIERZ PDF</a
-                    >
+                <div class="container download-break">
+                    <div class="button-right">
+                        <a href="#download" class="button button-border"
+                            >POBIERZ PDF</a
+                        >
+                    </div>
                 </div>
                 <div id="break2">
                     <div
@@ -251,7 +256,7 @@
                         accusantium nihil.
                     </h5>
                 </div>
-                <div class="container element">
+                <div class="container element element-right">
                     <div class="content">
                         <h5>Fundament innowacyjnego bezpieczeństwa</h5>
                         <p>
@@ -271,12 +276,12 @@
                     <img src="./img/bezpieczne-1.jpg" />
                     <img src="./img/bezpieczne-2.jpg" />
                 </div>
-                <div
-                    class="container download-break d-flex justify-content-end"
-                >
-                    <a href="#download" class="button button-border"
-                        >POBIERZ PDF</a
-                    >
+                <div class="container download-break">
+                    <div class="button-right">
+                        <a href="#download" class="button button-border"
+                            >POBIERZ PDF</a
+                        >
+                    </div>
                 </div>
                 <div class="container element">
                     <img src="./img/bezpieczne-3.jpg" class="img-span-2" />
@@ -298,13 +303,13 @@
                     </div>
                 </div>
                 <div
-                    class="container download-break d-flex justify-content-end"
+                    class="container download-break d-flex justify-content-start"
                 >
                     <a href="#download" class="button button-border"
                         >POBIERZ PDF</a
                     >
                 </div>
-                <div class="container element">
+                <div class="container element element-right">
                     <div class="content">
                         <h5>Ochrona, wykrywanie, odzyskiwanie</h5>
                         <p>
@@ -324,12 +329,12 @@
                     <img src="./img/bezpieczne-4.jpg" />
                     <img src="./img/bezpieczne-5.jpg" />
                 </div>
-                <div
-                    class="container download-break d-flex justify-content-end"
-                >
-                    <a href="#download" class="button button-border"
-                        >POBIERZ PDF</a
-                    >
+                <div class="container download-break">
+                    <div class="button-right">
+                        <a href="#download" class="button button-border"
+                            >POBIERZ PDF</a
+                        >
+                    </div>
                 </div>
             </section>
             <section id="solutions-grey">
@@ -345,7 +350,7 @@
                         accusantium nihil.
                     </h5>
                 </div>
-                <div class="container element">
+                <div class="container element element-right">
                     <div class="content">
                         <h5>Fundament innowacyjnego bezpieczeństwa</h5>
                         <p>
@@ -364,12 +369,12 @@
                     </div>
                     <img src="./img/przystepne-1.jpg" class="img-span-2" />
                 </div>
-                <div
-                    class="container download-break d-flex justify-content-end"
-                >
-                    <a href="#download" class="button button-border"
-                        >POBIERZ PDF</a
-                    >
+                <div class="container download-break">
+                    <div class="button-right">
+                        <a href="#download" class="button button-border"
+                            >POBIERZ PDF</a
+                        >
+                    </div>
                 </div>
                 <div class="container element">
                     <img src="./img/przystępne-2.jpg" class="img-span-2" />
@@ -393,13 +398,13 @@
                     </div>
                 </div>
                 <div
-                    class="container download-break d-flex justify-content-end"
+                    class="container download-break d-flex justify-content-start"
                 >
                     <a href="#download" class="button button-border"
                         >POBIERZ PDF</a
                     >
                 </div>
-                <div class="container element">
+                <div class="container element element-right">
                     <div class="content">
                         <h5>Fundament innowacyjnego bezpieczeństwa</h5>
                         <p>
@@ -419,12 +424,12 @@
                     <img src="./img/przystepne-3.jpg" />
                     <img src="./img/przystępne-4.jpg" />
                 </div>
-                <div
-                    class="container download-break d-flex justify-content-end"
-                >
-                    <a href="#download" class="button button-border"
-                        >POBIERZ PDF</a
-                    >
+                <div class="container download-break">
+                    <div class="button-right">
+                        <a href="#download" class="button button-border"
+                            >POBIERZ PDF</a
+                        >
+                    </div>
                 </div>
                 <div class="break">
                     <div
@@ -444,15 +449,25 @@
             >
                 <h2>CASE STUDY<br />STUDIUM PRZYPADKU MAIN STREET GROUP</h2>
                 <div class="container" id="casestudy-grid">
-                    <div class="d-flex flex-column justify-content-between">
-                        <p class="green-p">
+                    <div
+                        class="d-flex flex-column justify-content-between"
+                        id="casestudy-grid-el1"
+                    >
+                        <div class="green-p">
                             "Serwer HPE ProLiant DL360 Gen10 sprawia, że
                             wszystko działa płynniej, co w ostatecznym
                             rozrachunku jest bardziej opłacalne. Pracownicy mogą
                             wykonać więcej pracy, gdyż nie dochodzi do
                             przestojów."
-                        </p>
-                        <p>
+                            <p
+                                class="d-block d-xl-none"
+                                id="casestudy-hidden-author"
+                            >
+                                - Shon Olson, Server/Network Administrator,
+                                Astrup Drug
+                            </p>
+                        </div>
+                        <p class="d-none d-xl-block">
                             - Shon Olson, Server/Network Administrator, Astrup
                             Drug
                         </p>
@@ -579,5 +594,54 @@
                 </div>
             </section>
         </main>
+        <footer>
+            <div id="footer-content">
+                <div class="container d-flex">
+                    <div id="footer-about">
+                        <h3 class="footer-h3">O ITWIZ</h3>
+                        <p class="footer-p">
+                            ITwiz powstał po to, aby dostarczyć jak najlepszych
+                            narzędzi do komunikacji z osobami podejmującymi
+                            decyzje o zakupie rozwiązań informatycznych. ITwiz
+                            to miesięcznik dostępny w wersji drukowanej i
+                            cyfrowej, serwis internetowy, komunikacja przez
+                            social media, a także spotkania networkingowe i
+                            konferencje prowadzone przez najlepszych ekspertów
+                            specjalizujących się w nowoczesnych technologiach.
+                        </p>
+                    </div>
+                    <div id="footer-popular">
+                        <h3 class="footer-h3">POPULARNE W SERWISIE</h3>
+                        <ul id="footer-ul">
+                            <li>
+                                Microsoft uruchamia w Warszawie Azure Region
+                                Poland Central
+                            </li>
+                            <li>
+                                Debata: W jaki sposób banki dostosowały się do
+                                działania w czasie epidemii i jak zmienić to
+                                może ich funkcjonowanie w przyszłości
+                            </li>
+                            <li>
+                                Tarcza antykryzysowa 2.0: 100mld zł dla polskich
+                                przedsiębiorstw, z czego 60mld zł bezzwrotnie
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="footer-bottom">
+                <div class="container d-flex justify-content-between">
+                    <p class="footer-p">
+                        Regulamin | Polityka Prywatności | Polityka Cookies |
+                        Zasady publikacji komentarzy | Regulamin zakupów w
+                        Kiosku ITwiz
+                    </p>
+                    <p class="footer-p">
+                        © Copyright 2013-2022 ITwiz Media Group sp. z o.o.
+                    </p>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>
