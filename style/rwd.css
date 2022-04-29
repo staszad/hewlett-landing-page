@@ -20,8 +20,6 @@
         width: 80vw;
     }
     #header-banner {
-        background-size: cover;
-        position: relative;
         height: 500px;
     }
     h1 {
@@ -29,7 +27,7 @@
     }
     .element {
         grid-template-columns: repeat(2, 275px);
-        grid-auto-rows: 275px;
+        grid-auto-rows: minmax(200px, auto);
         /* justify-content: start; */
         gap: 25px 100px;
     }
@@ -39,6 +37,7 @@
         height: 100%;
         width: 650px;
         display: grid;
+        margin: 0;
     }
     .img-span-2 {
         height: 275px;
@@ -50,7 +49,7 @@
         gap: 25px;
     }
     .advantage-p {
-        width: 100%;
+        width: 95%;
     }
     .adv-square {
         font-size: 18px;
@@ -91,6 +90,9 @@
         justify-content: center;
         gap: 25px;
     }
+    #header-nav {
+        height: 200px;
+    }
     nav {
         width: 100%;
     }
@@ -130,5 +132,117 @@
         grid-template-columns: 575px;
         gap: 100px;
         justify-content: center;
+    }
+    #footer-content {
+        padding-bottom: 30px;
+    }
+    .footer-p {
+        padding: 0 10px;
+    }
+}
+@media screen and (max-width: 765.98px) {
+    #header-banner,
+    #header-nav > .container,
+    .container,
+    h3 {
+        width: 90vw;
+    }
+    .nav-a {
+        text-align: center;
+    }
+    #h1-border {
+        padding: 8px 16px;
+    }
+    .element {
+        grid-template-columns: repeat(2, calc((90vw - 25px) / 2));
+        grid-auto-rows: minmax(calc((90vw - 25px) / 2), auto);
+    }
+    .img-50 {
+        width: calc((90vw - 25px) / 2);
+    }
+    .button-right {
+        width: 90vw;
+    }
+    #casestudy-grid,
+    #download-grid {
+        grid-template-columns: 90vw;
+    }
+    #footer-about,
+    #footer-popular {
+        width: 40%;
+    }
+    #footer-ul {
+        width: 90%;
+    }
+}
+@media screen and (max-width: 575.98px) {
+    #header-banner {
+        background-position-x: 550px;
+    }
+    h1 {
+        margin-left: 10px;
+        font-size: 24px;
+        width: 67%;
+    }
+    #h1-border {
+        padding: 8px;
+    }
+    .img-50 {
+        width: 70vw;
+    }
+    .element {
+        grid-template-columns: 70vw;
+        grid-auto-rows: minmax(50vw, auto);
+    }
+    .content,
+    .img-span-2 {
+        grid-column: span 1;
+    }
+    #gradient1 {
+        height: 70vw;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    h4,
+    #break2-h4 {
+        width: 80%;
+    }
+    #advantages {
+        height: 1700px;
+        background-size: cover;
+    }
+    #advantages-grid {
+        grid-template-columns: 200px;
+        grid-auto-rows: 200px;
+    }
+    #advantage-content {
+        height: 550px;
+    }
+    .img-span-2 {
+        height: auto;
+    }
+    .download-break,
+    .button-right {
+        width: 70vw;
+    }
+    #casestudy {
+        height: 1900px;
+    }
+    #casestudy-grid {
+        height: 1600px;
+    }
+    #download {
+        height: 1300px;
+    }
+    #download-grid {
+        margin-top: 50px;
+    }
+    #footer-about,
+    #footer-popular {
+        width: 100%;
+    }
+    #footer-popular {
+        padding: 0;
     }
 }
